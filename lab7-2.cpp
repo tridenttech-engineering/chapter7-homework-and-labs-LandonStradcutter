@@ -10,5 +10,20 @@ using namespace std;
 
 int main()
 {
+    const double GROWTH_RATE = 0.055; 
+    double sales = 0.0;
+    double annualincrease = 0.0;
+    int years =0;
+    cout << "Current year's sales:";
+    cin >> sales;
+    while(sales < 150000.0)
+        {
+            annualincrease = sales * GROWTH_RATE;
+            sales += annualincrease;
+            years += 1;
+        
+        }
+    cout << fixed << setprecision(0);
+    cout << "Sales " << years << " years ago were $"<< sales << endl;
     return 0;
 } //end of main function
