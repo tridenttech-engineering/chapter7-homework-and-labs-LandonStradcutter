@@ -1,3 +1,4 @@
+
 //hw7-16.cpp - displays three tip amounts
 //Created/revised by <your name> on <current date>
 
@@ -15,17 +16,16 @@ int main()
 
 	cout << fixed;
 
-	double rate =0.1;
+	double rate = 0.1;
 	while (rate <= 0.2)
- break;
-	
-	{// Use <= for comparison
+	{
 		tip = bill * rate;
 		cout << setprecision(0);
 		cout << rate * 100 << "% tip: ";
 		cout << setprecision(2);
 		cout << "$" << tip << endl;
-	}   // end for
+		rate += 0.05;
+	}
   
 	return 0;
 }	//end of main function
